@@ -1,0 +1,168 @@
+﻿#logo {
+    display: block;
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    left: 150px;
+    z-index: 888;
+    color: #eee;
+}
+#logo:hover {
+    color: #ddd;
+}
+
+#page-header {
+    background-color: #131c37;
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    z-index: 555;
+}
+
+#page-header-links {
+    width: fit-content;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translate(-0%, -50%);
+}
+
+.page-header-link {
+    cursor: pointer;
+    display: inline-block;
+    width: 120px;
+    padding: 8px 0px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    margin: 5px 3.5px;
+}
+
+    .page-header-link:hover {
+        color: rgb(220,220,220);
+    }
+
+.page-header-icon {
+    font-size: 30px;
+    line-height: 55px;
+}
+
+
+@media (max-width: 500px) /*cok kucuk mobil*/
+{
+    #logo {
+        display: none;
+        width: 180px;
+        margin: 30px;
+        position: fixed;
+        top: 0px;
+        left: 130px;
+    }
+
+    #page-header {
+        height: 120px;
+    }
+
+    #page-header-links {
+        width: fit-content;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translate(-0%, -50%);
+    }
+
+    .page-header-link {
+        display: inline-block;
+        width: 60px;
+        padding: 5px 0px;
+        font-size: 13px;
+        margin: 5px 5px;
+    }
+
+    .page-header-icon {
+        font-size: 25px;
+        line-height: 45px;
+    }
+}
+
+
+@media (min-width: 500px) and (max-width: 768px) /*mobil*/
+{
+    #logo {
+        display: none;
+        width: 180px;
+        margin: 30px;
+        position: fixed;
+        top: 0px;
+        left: 130px;
+    }
+
+    #page-header {
+        height: 120px;
+    }
+
+    #page-header-links {
+        width: fit-content;
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translate(-0%, -50%);
+    }
+
+    .page-header-link {
+        display: inline-block;
+        width: 80px;
+        padding: 5px 0px;
+        font-size: 13px;
+        margin: 5px 5px;
+    }
+
+    .page-header-icon {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) /*dikey tablet*/
+{
+    #logo {
+        display: none;
+        width: 180px;
+        margin: 30px;
+        position: fixed;
+        top: 0px;
+        left: 130px;
+    }
+
+    #page-header {
+        height: 120px;
+    }
+
+    #page-header-links {
+        width: fit-content;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translate(-0%, -50%);
+    }
+
+    .page-header-link {
+        display: inline-block;
+        width: 120px;
+        padding: 5px 0px;
+        font-size: 14px;
+        margin: 5px 3px;
+    }
+
+
+    .page-header-icon {
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) /*Yatay Tablet + Minibook Laptop*/
+{
+}

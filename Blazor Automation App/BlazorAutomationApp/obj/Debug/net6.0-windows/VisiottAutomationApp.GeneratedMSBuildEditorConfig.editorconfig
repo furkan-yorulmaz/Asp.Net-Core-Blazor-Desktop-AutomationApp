@@ -1,0 +1,98 @@
+is_global = true
+build_property.ApplicationManifest = 
+build_property.StartupObject = 
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
+build_property.TargetFramework = net6.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = VisiottAutomationApp
+build_property.RootNamespace = VisiottAutomationApp
+build_property.ProjectDir = C:\Users\FURKAN\Desktop\Visiott Automation App - Kopya - Kopya\VisiottAutomationApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\FURKAN\Desktop\Visiott Automation App - Kopya - Kopya\VisiottAutomationApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Main.razor]
+build_metadata.AdditionalFiles.TargetPath = TWFpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Pages/Login/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Pages/Start/StartPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhcnRcU3RhcnRQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Pages/Stock/Category/CategoryPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvY2tcQ2F0ZWdvcnlcQ2F0ZWdvcnlQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Pages/Stock/Product/InsertProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvY2tcUHJvZHVjdFxJbnNlcnRQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Pages/Stock/Product/ProductPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvY2tcUHJvZHVjdFxQcm9kdWN0UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Pages/Stock/Product/UpdateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvY2tcUHJvZHVjdFxVcGRhdGVQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Pages/Users/UserPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXNlclBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Shared/Components/Grid/Cell.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcR3JpZFxDZWxsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Shared/Components/Grid/Column.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcR3JpZFxDb2x1bW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Shared/Components/Grid/Grid.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcR3JpZFxHcmlkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Shared/Components/Grid/Row.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcR3JpZFxSb3cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Shared/Components/Header/MainHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcSGVhZGVyXE1haW5IZWFkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Shared/Components/Header/StartHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcSGVhZGVyXFN0YXJ0SGVhZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Shared/Components/MessageBox/MessageBoxModal.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTWVzc2FnZUJveFxNZXNzYWdlQm94TW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Shared/Components/NavMenu/MainNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTmF2TWVudVxNYWluTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Shared/Layouts/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/Shared/Layouts/StartLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcU3RhcnRMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FURKAN/Desktop/Visiott Automation App - Kopya - Kopya/VisiottAutomationApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

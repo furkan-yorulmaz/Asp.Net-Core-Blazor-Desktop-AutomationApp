@@ -1,0 +1,47 @@
+﻿@using BlazorAutomationApp.Pages.Login
+@using BlazorAutomationApp.Shared.Components.MessageBox
+
+<a href="productpage">
+    <div id="logo">
+        <h4 style="line-height:100px;"><i class="bi bi-boxes"></i> BLAZOR STOCK</h4>
+    </div>
+</a>
+
+<div id="page-header">
+    <div id="page-header-links">
+        <a class="page-header-link" @onclick="@Login" href="">
+            <i class="bi bi-people-fill page-header-icon"></i><br>
+            Kullanıcı Girişi
+        </a>
+        <span class="page-header-link" @onclick="@About">
+            <i class="bi bi-info-circle-fill page-header-icon"></i><br>
+            Hakkında
+        </span>
+        <a class="page-header-link" @onclick="@Exit" href="">
+            <i class="bi bi-power page-header-icon"></i><br>
+            Çıkış
+        </a>
+    </div>
+</div>
+@code {
+    void Exit()
+    {
+        Application.Exit();
+    }
+
+    [CascadingParameter]
+    IModalService Modal { get; set; }
+    void Login()
+    {
+        Modal.Show<Login>("");
+    }
+
+    void About()
+    {
+        ModalParameters mparams = new ModalParameters();
+        mparams.Add("title", "Hakkında");
+        mparams.Add("text", "Blazor Windows Form Otomation App /// Blazor ve Entity Framework Core kullanarak masaüstü uygulaması örneği adına geliştirilmiş bir projedir.");
+        mparams.Add("buttonText", "Tamam");
+        Modal.Show<MessageBoxModal>("", mparams);
+    }
+}

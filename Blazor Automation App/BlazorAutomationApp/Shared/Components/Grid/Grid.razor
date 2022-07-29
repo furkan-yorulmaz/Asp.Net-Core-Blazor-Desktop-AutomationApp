@@ -1,0 +1,28 @@
+﻿@typeparam TableItem
+
+<div class="gridview-container">
+    <div class="gridview">
+        <div class="gridview-head">
+            @GridHead
+        </div>
+        <div class="gridview-row-container">
+            @foreach (var item in Items)
+            {
+                @GridBody(item)
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    
+    [Parameter]
+    public RenderFragment? GridHead { get; set; }
+
+    [Parameter]
+    public RenderFragment<TableItem> GridBody { get; set; }
+    /*gridbody alt elemenleri arasında tableitem türünde varlıklar barındırabilen renderfragment nesnesidir*/
+
+    [Parameter]
+    public IEnumerable<TableItem> Items { get; set; }
+}  

@@ -1,0 +1,114 @@
+﻿@page "/productpage"
+@using BlazorAutomationApp.Business
+@using BlazorAutomationApp.Shared.Components.Grid
+
+<label class="content-lbl-title">Ürün Listesi</label>
+
+<div class="bg-white">
+    <div class="container p-2 bg-white">
+        <div class="row p-2">
+            <div class="col-sm-3 g-1"><input type="text" class="form-control" placeholder="Search..." @bind="@findtext" /></div>
+            <div class="col-sm g-1"><button class="content-btn" @onclick="@(()=>Search())">Ara</button></div>
+        </div>
+    </div>
+</div>
+
+<Grid Items="@data">
+    <GridHead>
+        <Column>ID</Column>
+        <Column>Kategori</Column>
+        <Column>İsim</Column>
+        <Column>Fiyat</Column>
+        <Column>Açıklama</Column>
+    </GridHead>
+    <GridBody>
+        <Row onClick="@(() => Update(context))">
+            <Cell>@context.Id</Cell>
+            <Cell>@categoryManager.Find(context.CategoryId).Name.ToString()</Cell>
+            <Cell>@context.Name</Cell>
+            <Cell>@context.Price</Cell>
+            <Cell>@context.Description</Cell>
+        </Row>
+    </GridBody>
+</Grid>
+
+<div class="container px-0 py-2 mt-2">
+    <div class="row">
+        <div class="col-sm-auto g-2">
+            <button @onclick="@(() => Insert())" class="content-btn-big">
+                <i class="bi bi-plus-circle-fill"></i><br>
+                <span>Yeni</span>
+            </button>
+        </div>
+        <div class="col-sm-auto g-2">
+            <button @onclick="@(() => Refresh())" class="content-btn-big">
+                <i class="bi bi-arrow-clockwise"></i><br>
+                <span>Yenile</span>
+            </button>
+        </div>
+        <div class="col-sm-auto g-2">
+            <button class="content-btn-big">
+                <i class="bi bi-x-circle-fill"></i><br>
+                <span>Kapat</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    [CascadingParameter]
+    IModalService Modal { get; set; }
+    ProductManager productManager = new ProductManager();
+    CategoryManager categoryManager = new CategoryManager();
+    public List<Product> data = new List<Product>();
+    public string findtext { get; set; } = "";
+
+    protected override void OnInitialized()
+    {
+        data = productManager.List();
+    }
+
+    async Task Insert()
+    {
+        var mdl = Modal.Show<InsertProduct>("");
+        var result = await mdl.Result;
+        if (result.Cancelled)
+        {
+            data.Clear();
+            data = productManager.List();
+        }
+        else
+        {
+            data.Clear();
+            data = productManager.List();
+        }
+    }
+
+    async Task Update(Product i)
+    {
+        ModalParameters mparams = new ModalParameters();
+        mparams.Add("product", i);
+        var mdl = Modal.Show<UpdateProduct>("", mparams);
+        var result = await mdl.Result;
+        if (result.Cancelled)
+        {
+            data.Clear();
+            data = productManager.List();
+        }
+        else
+        {
+            data.Clear();
+            data = productManager.List();
+        }
+    }
+
+    void Refresh()
+    {
+        data = productManager.List();
+    }
+
+    void Search()
+    {
+        data = productManager.FilterList(findtext);
+    }
+}

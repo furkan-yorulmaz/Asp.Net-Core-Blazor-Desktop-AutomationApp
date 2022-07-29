@@ -1,0 +1,40 @@
+﻿
+<div class="form">
+    <label class="content-lbl-title">@title</label>
+    <div class="container py-4 px-5 bg-white">
+        <div class="row mb-3 justify-content-md-center">
+            <div class="col-md-auto">
+                @text
+            </div>
+        </div>
+        <div class="row mb-3 justify-content-md-center">
+            <div class="col-md-auto">
+                <button class="content-btn" @onclick="@Cancel">@buttonText</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string title { get; set; } = "";
+    [Parameter]
+    public string text { get; set; } = "";
+    [Parameter]
+    public string buttonText { get; set; } = "";
+
+    public async override Task SetParametersAsync(ParameterView parameters)
+    {
+        title = parameters.GetValueOrDefault<string>("title") ?? "";
+        text = parameters.GetValueOrDefault<string>("text") ?? "";
+        buttonText = parameters.GetValueOrDefault<string>("buttonText") ?? "";
+
+        await base.SetParametersAsync(parameters);
+    }
+
+    [CascadingParameter] BlazoredModalInstance ModalInstance { get; set; }
+    public async Task Cancel()
+    {
+        await ModalInstance.CancelAsync();
+    }
+}

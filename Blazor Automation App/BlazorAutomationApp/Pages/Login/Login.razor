@@ -1,0 +1,58 @@
+﻿@page "/login"
+@inherits LoginBase
+@using BlazorAutomationApp.Pages.Start
+@using BlazorAutomationApp.Shared.Components.MessageBox
+@inject NavigationManager NavManager
+
+<div class="form">
+    <label class="content-lbl-title">Giriş Yap</label>
+    <div class="container py-4 px-5 bg-white">
+        <div class="row mb-4">
+            <div class="col-sm">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" @bind="@username" placeholder="Kullanıcı Adı">
+                    <label for="floatingInput">Kullanıcı Adı</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-sm">
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" @bind="@password" placeholder="Şifre">
+                    <label for="floatingPassword">Şifre</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button class="content-btn" @onclick="@(()=>logIn())">Giriş</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public string username { get; set; } = "";
+    public string password { get; set; } = "";
+    private string _password { get; set; } = "";
+
+    [CascadingParameter]
+    IModalService Modal { get; set; }
+    void logIn()
+    {
+        var data = Login(username, password);
+        _password = EncryptText(password);
+        if (data.Username == username && data.Password == _password)
+        {
+            NavManager.NavigateTo("ProductPage");
+        }
+        else
+        {
+            ModalParameters mparams = new ModalParameters();
+            mparams.Add("title", "Giriş Yap");
+            mparams.Add("text", "Giriş hatası. Lütfen girilen bilgileri kontrol edin.");
+            mparams.Add("buttonText", "Tamam");
+            Modal.Show<MessageBoxModal>("", mparams);
+        }
+    }
+}

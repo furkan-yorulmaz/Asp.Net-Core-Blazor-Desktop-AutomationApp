@@ -1,0 +1,75 @@
+﻿.content-lbl-title {
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-image: linear-gradient(315deg, #121b30 0%, #2b385f 74%);
+}
+
+.content-btn {
+    cursor: pointer;
+    width: fit-content;
+    min-width: 85px;
+    height: 37px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 6px 13px;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(315deg, #121b30 0%, #2b385f 74%);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9);
+}
+
+.content-btn-big {
+    cursor: pointer;
+    box-sizing: content-box;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 25px;
+    background-image: linear-gradient(315deg, #121b30 0%, #2b385f 74%);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+}
+
+    .content-btn-big:active {
+        height: 58px;
+        width: 58px;
+        margin: 2px 0 0 2px;
+    }
+
+    .content-btn-big:hover {
+        background-color: #18254c;
+    }
+
+    .content-btn-big span {
+        font-size: 13px;
+    }
+
+
+@media (max-width: 500px) /*cok kucuk mobil*/
+{
+}
+
+@media (min-width: 500px) and (max-width: 768px) /*mobil*/
+{
+}
+
+@media (min-width: 768px) and (max-width: 991px) /*dikey tablet*/
+{
+}
+
+@media (min-width: 991px) and (max-width: 1199px) /*Yatay Tablet + Minibook Laptop*/
+{
+}
